@@ -30,8 +30,9 @@ check
 ```
 ```bash
 Select a file to check and autocorrect with pycodestyle:
-1.   check.sh                      2.   install.sh                    3.   README.md                     
-Enter the file number: 
+1.   check.sh         2.   install.sh       3.   main.py                    
+Enter the file number: 3
+Success! No violations found.
 ```
 The script will run `autopep8` to automatically correct the code style violations and then use `pycodestyle` to check the corrected code. If any violations are found, they will be displayed with the line numbers and a warning message.
 
