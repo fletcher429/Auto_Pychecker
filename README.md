@@ -1,19 +1,48 @@
-📝 Description:
+## Stylistic
 
-Auto_Pychecker🎨✨ is a powerful yet user-friendly program designed to help you ensure your Python code adheres to the PEP 8 style guidelines. With Stylistic, you can easily identify and fix common code style violations, making your code cleaner, more readable, and consistent.
+📝 **Installation:**
 
-This program offers a convenient command-line interface that allows you to select a Python file from the current directory, automatically apply code formatting using the popular autopep8 tool, and perform static code analysis using pycodestyle. Stylistic goes beyond just checking for line length violations; it examines various aspects of your code, such as unused imports, variable naming conventions, and missing docstrings.
+To install and use Stylistic, follow these simple steps:
 
-Key Features:
-✨ Interactive and intuitive interface for file selection
-✨ Auto-correction of fixable code style violations using autopep8
-✨ Static code analysis to detect common style issues using pycodestyle
-✨ Color-coded warnings for better visibility
-✨ Detailed reporting of violations, including line numbers and descriptions
-✨ Ability to handle files with lines longer than 85 characters gracefully
-✨ Informative success message when no violations are found
-✨ Easy installation of autopep8 and pycodestyle if not already installed
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/fletcher429/Auto_Pychecker.git
+   ```
 
-Stylistic is your trusty companion for maintaining code quality and ensuring your Python projects shine with elegance and consistency. Let Stylistic take care of the nitty-gritty details while you focus on crafting remarkable Python code. ✨🐍💻
+2. Navigate to the project directory:
+   ```
+   cd stylistic
+   ```
 
-Give Stylistic a try today and experience the joy of code that not only functions flawlessly but also looks visually pleasing! 🌟✨🎨
+3. Install the required dependencies:
+   ```
+   pip3 install --user -r requirements.txt
+   ```
+
+4. Run the program:
+   ```
+   ./stylistic.sh
+   ```
+
+5. Follow the on-screen prompts to select a Python file and perform code style checks.
+
+*Note: Make sure you have Python 3.x and pip installed on your system before proceeding with the installation.*
+
+📋 **Usage:**
+
+1. Upon running the program, you will be presented with a list of Python files in the current directory.
+2. Use the file numbers to select a file you want to check and autocorrect.
+3. The program will automatically apply code formatting using autopep8 and perform static code analysis using pycodestyle.
+4. Any code style violations will be displayed, including line numbers and descriptions.
+5. If fixable violations are found, Stylistic will attempt to correct them and provide feedback.
+6. If there are violations that cannot be fixed automatically (e.g., lines longer than 85 characters), Stylistic will highlight them for your attention.
+7. After the analysis, Stylistic will display a success message if no violations are found.
+
+🚫 **Limitations:**
+
+1. Stylistic relies on autopep8 and pycodestyle for code formatting and style analysis, respectively. Any limitations or issues with these tools may impact the accuracy of the results.
+2. While Stylistic can handle most common code style violations, it is not a comprehensive solution for all possible style guidelines.
+3. In cases where lines exceed 85 characters and cannot be automatically fixed, Stylistic will point out the violations but cannot correct them directly.
+4. Stylistic currently supports Python files within the current directory only. Support for file selection from any directory may be added in future updates.
+
+Enjoy using Stylistic to maintain clean, consistent, and visually pleasing Python code! 🌟✨🎨
