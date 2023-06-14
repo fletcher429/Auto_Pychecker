@@ -35,12 +35,21 @@ Enter the file number: 3
 Success! No violations found.
 ```
 The script will run `autopep8` to automatically correct the code style violations and then use `pycodestyle` to check the corrected code. If any violations are found, they will be displayed with the line numbers and a warning message.
+## Features
+1. `Indentation`: Fixes incorrect indentation.
+2. `Whitespace`: Removes unnecessary whitespace and excessive empty lines.
+3. `Import Formatting`: Organizes and formats import statements.
+4. `Parentheses Formatting`: Corrects issues with parentheses placement.
+5. `Operator Spacing`: Adjusts spacing around operators.
+6. `Function and Class Formatting`: Maintains consistent formatting of functions and classes.
+7. `Quotation Marks`: Converts quotation marks to follow a consistent style.
+8. `Comma Placement`: Ensures proper comma placement.
 
 ## Limitations :exclamation:
 - The Auto_Pychecker can't correct (line is over 95 > 85).But it will suggest where the the exact error are
 ```bash
 Code violations found:
-Warning: At line 5 ::Lines exceeds 86 > 85
+Warning: At line 5 ::Lines exceeds 95 > 85
 ```
 - Auto_Pychecker currently supports checking and autocorrecting code style violations with `pycodestyle` and `autopep8`.
 - The script assumes that you have Python 3 installed on your system.
