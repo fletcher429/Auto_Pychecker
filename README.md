@@ -37,14 +37,11 @@ Success! No violations found.
 The script will run `autopep8` to automatically correct the code style violations and then use `pycodestyle` to check the corrected code. If any violations are found, they will be displayed with the line numbers and a warning message.
 
 ## Limitations :exclamation:
-
+- The Auto_Pychecker can't correct (line is over 95 > 85).But it will suggest where the the exact error are
+```bash
+Code violations found:
+Warning: At line 5 ::Lines exceeds 86 > 85
+```
 - Auto_Pychecker currently supports checking and autocorrecting code style violations with `pycodestyle` and `autopep8`.
 - The script assumes that you have Python 3 installed on your system.
 - The script is designed to work on Debian-based Linux distributions. If you're using a different distribution, you may need to modify the package installation commands accordingly.
-
-## License :scroll:
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-The added emojis are marked with colons (:emoji_name:) for easier identification. Feel free to modify or adjust them as per your preference.
