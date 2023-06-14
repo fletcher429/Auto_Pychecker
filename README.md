@@ -1,48 +1,30 @@
-## Auto_Pychecker
+# Auto_Pychecker
 
-📝 **Installation:**
+Auto_Pychecker is a script that automates the checking and autocorrection of Python code style using `pycodestyle` and `autopep8`.
+It provides a convenient way to identify and fix common style violations in Python scripts.
 
-To install and use Auto_Pychecker, follow these simple steps:
+## Installation
 
-1. Clone the repository to your local machine:
-   ```
-   git clone https://github.com/your-username/auto-pychecker.git
-   ```
+To use Auto_Pychecker, follow these steps:
 
-2. Navigate to the project directory:
-   ```
-   cd auto-pychecker
-   ```
+1. Download the `check.sh` script.
+2. Open a terminal and navigate to the directory where the `check.sh` script is located.
+3. Run the `install.sh` script to install and configure Auto_Pychecker. Make sure to provide the necessary permissions to execute the `install.sh` script.
 
-3. Install the required dependencies:
-   ```
-   pip3 install --user -r requirements.txt
-   ```
+The `install.sh` script will take care of installing `pip3`, moving the `check.sh` script to `/usr/local/bin`, renaming it to `check`, and making it executable.
 
-4. Run the program:
-   ```
-   ./auto_pychecker.sh
-   ```
+## Usage
 
-5. Follow the on-screen prompts to select a Python file and perform code checks.
+To use Auto_Pychecker, simply open a terminal and type `check`. The script will prompt you to select a file to check and autocorrect with `pycodestyle`. You can choose the file by entering the corresponding number.
 
-*Note: Make sure you have Python 3.x and pip installed on your system before proceeding with the installation.*
+The script will run `autopep8` to automatically correct the code style violations and then use `pycodestyle` to check the corrected code. If any violations are found, they will be displayed with the line numbers and a warning message.
 
-📋 **Usage:**
+## Limitations
 
-1. Upon running the program, you will be presented with a list of Python files in the current directory.
-2. Use the file numbers to select a file you want to check and autocorrect.
-3. The program will automatically analyze the code using various static analysis tools.
-4. Any code violations or style issues will be displayed, including line numbers and descriptions.
-5. Auto_Pychecker will attempt to automatically fix fixable violations.
-6. If there are violations that cannot be fixed automatically, the program will provide information and suggestions for manual correction.
-7. After the analysis, Auto_Pychecker will display a success message if no violations are found.
+- Auto_Pychecker currently supports checking and autocorrecting code style violations with `pycodestyle` and `autopep8`.
+- The script assumes that you have Python 3 installed on your system.
+- The script is designed to work on Debian-based Linux distributions. If you're using a different distribution, you may need to modify the package installation commands accordingly.
 
-🚫 **Limitations:**
+## License
 
-1. Auto_Pychecker relies on various static analysis tools for code analysis and style checks. Limitations or issues with these tools may impact the accuracy of the results.
-2. While Auto_Pychecker covers a wide range of common code violations, it may not capture all possible issues or adhere to specific style guidelines.
-3. Some issues may require manual correction, and Auto_Pychecker will provide information and suggestions to assist with the process.
-4. Auto_Pychecker currently supports Python files within the current directory only. Support for file selection from any directory may be added in future updates.
-
-Enjoy using Auto_Pychecker to improve the quality and style of your Python code effortlessly! 🚀🔍🔧
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
